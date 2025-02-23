@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0
+}
+a {
+    text-decoration: none;
+    
+  }
+
+body{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color:aliceblue;
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+header .Web-Title{
+width: 50%;
+height: 100%;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+font-family: "Damion", serif;
+font-weight: 600;
+margin-left: 20px;
+}
+
+header .title{
+ 
+justify-content: center;
+align-items: center;
+    width: 50%;
+    display: flex;
+
+}
+header .title .Lists{
+    display: flex;
+
+}
+header .title button{
+    float: right;
+    margin-left: 30px;
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(91, 47, 133);
+    color: #fff;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .title .Lists li{
+margin-left: 40px;
+list-style: none;
+cursor: pointer;
+}
+
+.Section-1{
+    width: 100%;
+    height: 600px;
+    background-image: url(../assests/head-1.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Section-1{
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+}
+.Section-1 .content-home{
+text-align: center;
+align-items: center;
+justify-content: center;
+height: 90%;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+}
+.Section-1 .content-home h2{
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+.Section-1 .content-home h1{
+    font-size:50px;
+    white-space: nowrap;       
+    overflow: hidden;          
+    border-right: 3px solid rgb(248, 243, 243); 
+   
+    animation: typing 4s steps(30, end) infinite, blink 0.5s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 30ch; } 
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }  
+  }
+.Section-1  .content-home button{
+    padding: 19px 17px 17px 19px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 13px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+.content-home button:hover{
+    background-color:#f8f6f6;
+}
+
+
+
+.Section-2{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   background-color: rgb(254, 254, 254);
+   
+   
+   
+}
+.Section-2 .Contents h2{
+    font-family: "Damion","sans-serif";
+    
+
+}
+.Contents{
+    margin-top:43px;
+}
+
+
+
+.Section-2 .Contents h4{
+   margin-top: 50px;
+font-weight: 00;
+}
+
+
+
+.containers{
+    display: flex;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    height: 500px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.containers .containers-block{
+    align-items: center;
+    text-align: center;
+align-items: center;display: flex;    
+}
+
+.containers-block{
+    height: 250px;
+    width: 250px;
+    border-radius: 16px;
+    justify-content: space-evenly;
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+
+}
+
+.containers-block img{
+    height: 60px;
+    width: 60px;
+}
+
+
+
+.containers-block h3{
+    font-family: "Playwrite ES Deco", serif;
+    font-optical-sizing: auto;
+}
+
+
+
+.slider-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.event-card {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: white;
+}
+
+.event-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.event-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    color: #ddd;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #7917c4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+.horizontal-events {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    overflow-x:auto;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #f1f1f1;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+  
+  .event-item {
+    flex: 0 0 320px;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  
+  .event-info {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .event-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .event-schedule {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #680f91;
+  }
+  
+  .event-summary {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+  }
+  
+  .event-book-btn {
+    display: block;
+    margin-top: 15px;
+    background-color: #640eab;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-book-btn:hover {
+    background-color: #6409b3;
+  }
+  .Event-details{
+bottom: 0;
+position: absolute;
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+
+  }
+  .Event-details .event-date-venue{
+    font-size: 12px;
+    font-weight: 400;
+   
+  }
+  .Event-Text-bold{
+    color: rgb(247, 247, 247);
+  }
+  .Technogies-used{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Technologies-img{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .Technologies-img img{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+  }

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="BookingPage.css" ></link>
+        <link rel="icons" href="../assests/dj-cocert.jpg">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+    <header>
+        <h1 class="Web-Title" >CrowdCard</h1>
+    <div class="title">
+        <ul class="Lists">
+            <li><i class='bx bxs-home-circle' ></i><a href="index.html">Home</a></li>
+      
+        </ul>
+        <button>View Tickets</button>
+    </div>
+    </header>
+
+    <Section class="Booking-Section-1">
+        <div>
+        <h1>Grab Your E-Tickets</h1>
+        <form id="bookingForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="eg : Jhon Joe">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="eg : jhonjoe@gmail.com" required>
+    
+            <label for="event">Event</label>
+            <select id="event" required>
+                <option value="Winter Wonderland Carnival">Winter Wonderland Carnival</option>
+                <option value="Tech Conference">Conference</option>
+                <option value="Tech Innovators Expo">Tech Innovators Expo</option>
+                <option value="Culinary Delights Fair">Events</option>
+                <option value="Workshop">Festivals</option>
+            </select>
+    
+            <button type="submit" class="BookNow">Book Now</button>
+        </form>
+    </div>
+    <div class="booked-ticket" id="ticket">
+        <div class="ticket-header" >CrowdCard</div>
+        <div class="ticket-details">
+          <p><strong style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:rgb(136, 27, 238);float: left;">Event : </strong> <span id="eventName" style="font-weight: 600;"></span></p>
+          <p><strong style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:rgb(136, 27, 238);float: left;">Date : </strong> <span id="eventDate"  style="font-weight: 600;"></span></p>
+          <p><strong style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:rgb(136, 27, 238);float: left;">Booking ID : </strong> <span id="bookingId"  style="font-weight: 600;float: left;"></span></p>
+        </div>
+        <div id="qrCode" class="ticket-qr"><img src="../assests/image-1.jpg"></div>
+        <button class="download-button" id="downloadBtn" style="display:none;">Download Ticket</button>
+        <h6 class="e-ticket">E-ticket</h6>
+      </div>
+     
+    
+          
+    </Section>
+    
+   
+    
+
+    <script src="booking.js"></script>
+</body>
+</html>
